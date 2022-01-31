@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generell kod */
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color: #96bdc6;
+    --secondary-color: #161b33;
+    --extra-color: #81968f;
+    
+    --main-text-color: #333333;
+    --main-text-color-light: #fff;
+
+    --base-border-rad: 5px;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* Navbar */
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 5rem;
+    
+    background: var(--main-text-color);
+}
+
+.topnav .img-container{
+    width: 4rem;
+    height: 4rem;
+}
+
+.topnav > .navlinks a{
+    text-decoration: none;
+    padding: 2rem;
+    color: var(--main-text-color-light);
+    font-size: 1.3rem;
+
+    transition: background 0.1s linear;
+}
+
+.topnav > .navlinks a:hover{
+    background: var(--primary-color);
+}
+
+/* Subnav */
+.subnav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    background: var(--primary-color);
+    height: 2rem;
+}
+
+.subnav a{
+    text-decoration: none;
+    color: var(--main-text-color);
+    margin: 0 1.5rem;
+    font-weight: 550;
+}
+
+/* Introduktion */
+.introduction{
+    background-image: url(img/smartphone-conceptdrawing.jpg);
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    
+    width: 100vw;
+    height: 70vh;
+    max-width: 100%;
+}
+
+.introduction .buttons{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 20%;
+}
+
+.introduction button{
+    border: none;
+    background: var(--secondary-color);
+    padding: 1rem;
+    border-radius: var(--base-border-rad);
+    color: var(--main-text-color-light);
+    width: 15rem;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1rem;
+
+    transition: background 0.1s linear;
+}
+
+.introduction button:hover{
+    background: var(--primary-color);
+}
+
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100vw;
+    max-width: 100%;
+    height: 10rem;
+
+    color: var(--main-text-color-light); 
+    background: var(--secondary-color);
+}
+
+footer > :first-child{
+    width: 6rem;
+}

@@ -114,6 +114,73 @@ button{
     background: var(--primary-color);
 }
 
+/* Hållbarhet */
+.hallbarhet-main{
+    display: flex;
+
+    max-width: 65rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hallbarhet-main aside{
+    flex: 0 0 20rem;
+    padding-right: 1rem;
+}
+
+.hallbarhet-main aside > *{
+    margin: 0.5rem 0;
+    padding: 1rem 0;
+    
+    border-top: 1px dashed black;
+}
+
+.hallbarhet-main .main-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+
+    padding-left: 1rem;
+    border-left: 1px dashed #000;
+}
+
+.hallbarhet-main .main-content > :first-child{
+    height: 6rem;
+    order: 2;
+}
+
+.hallbarhet-main .main-content > :nth-child(2){
+    flex: 1 1;
+
+}
+
+.hallbarhet-main .main-content > :first-child{
+    display: flex;
+    align-items: center;
+}
+
+.hallbarhet-main .main-content > :first-child > :first-child{
+    max-width: 10rem;
+    text-align: center;
+}
+
+.hallbarhet-main .main-content > :first-child p{
+    flex: 1 1;
+
+    padding-left: 1rem;
+    margin-left: 1rem;
+    border-left: 1px solid black;
+}
+
+.hallbarhet-main .main-content > :nth-child(2) h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hallbarhet-main .main-content > :nth-child(2) p{
+    margin-bottom: 1rem;
+}
 
 /* Footer */
 footer{

@@ -366,7 +366,7 @@ button{
 }
 
 .main-about section .img-container{
-    width: 33rem;
+    max-width: 33rem;
 }
 
 .main-about section .about{
@@ -439,6 +439,16 @@ footer > :first-child{
 
     .introduction .buttons button{
         margin-top: 1rem;
+    }
+
+    /* About */
+    .main-about section{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-about section .about.about{
+        order: 12;
     }
 
     /* Footer */

@@ -32,6 +32,10 @@ html{
 }
 
 .img-container img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     width: 100%;
 }
 
@@ -39,11 +43,16 @@ button{
     cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6{
+/*! Fundera över header fonten */
+/* h1, h2, h3, h4, h5, h6{
     font-family: 'Source Serif Pro', serif;
-}
+} */
 
 /* Navbar */
+.topnav .navlinks-mobile{
+    display: none;
+}
+
 .topnav{
     display: flex;
     justify-content: space-between;
@@ -59,7 +68,7 @@ h1, h2, h3, h4, h5, h6{
     height: 4rem;
 }
 
-.topnav > .navlinks a{
+.topnav > .navlinks a, footer .navlinks a{
     text-decoration: none;
     padding: 2rem;
     color: var(--main-text-color-light);
@@ -70,6 +79,14 @@ h1, h2, h3, h4, h5, h6{
 
 .topnav > .navlinks a:hover{
     background: var(--primary-color);
+}
+
+.topnav .navlinks-mobile a{
+    display: none;
+    
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
 }
 
 /* Subnav */
@@ -97,17 +114,31 @@ h1, h2, h3, h4, h5, h6{
 
     display: flex;
     align-items: center;
+    position: relative;
     
     width: 100vw;
     height: 70vh;
     max-width: 100%;
 }
 
+.introduction .prompt{
+    margin-left: 20%;
+    justify-content: center;
+}
+
+.introduction .prompt .text{
+    font-size: 2rem;
+    max-width: 31rem;
+    font-weight: bold;
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
 .introduction .buttons{
     display: flex;
-    flex-direction: column;
-
-    margin-left: 20%;
+    margin-top: 1rem;
 }
 
 .introduction button{
@@ -119,7 +150,7 @@ h1, h2, h3, h4, h5, h6{
     width: 15rem;
     font-weight: 700;
     font-size: 2rem;
-    margin-top: 1rem;
+    margin-right: 1rem;
 
     transition: background 0.1s linear;
 }
@@ -129,46 +160,93 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .introduction .img-credits{
-    align-self: flex-end;
-    justify-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 /* Phone index */
+.phones-index-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.phones-index-header h1{
+    font-size: 2.2rem;
+    
+    border-radius: 0.5rem;    
+    background: rgb(222, 227, 233);
+    padding: 0.5rem;
+}
+
 .phones-index{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
-    background: var(--main-text-color-light);
 }
 
-.phones-index .phone{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+.phones-index .phone{    
+    border: solid 1px #dfdfdf;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
     margin: 1rem;
-    width: 15rem;
-    padding: 1rem;
-    border-radius: var(--base-border-rad);
-    background: rgba(var(--primary-color-rgb), 0.3);
 }
 
-.phones-index .phone h2{
-    font-size: 1.6rem;
-}
-
-.phones-index .phone p{
+.phones-index .phone > :first-child{
     text-align: center;
-    margin-top: 0.5rem;
-    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
 }
 
-.phones-index .phone .buttons{
+.phones-index .phone .img-container{
+    width: 20rem;
+}
+
+.phones-index .phone .colors{
+    margin-top: 0.2rem;
+}
+
+.phones-index .phone .colors > *{
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+
+    display: inline-block;
+}
+
+.phones-index .phone .colors > *:hover{
+    border: solid black 2px;
+}
+
+.phones-index .phone .colors > :nth-child(1){
+    background: rgb(255, 52, 52);
+}
+
+.phones-index .phone .colors > :nth-child(2){
+    background: rgb(59, 124, 161);
+}
+
+.phones-index .phone .colors > :nth-child(3){
+    background: rgb(41, 170, 127);
+}
+
+.phones-index .phone .colors > :nth-child(4){
+    background: rgb(0, 0, 0);
+}
+
+.phones-index .phone .spec-pair{
     margin-top: 0.5rem;
 }
 
+.phones-index .phone .spec-pair h3{
+    font-size: 1.3rem;
+}
 
+.phones-index .phone .spec-pair p{
+    font-size: 1.1rem;
+}
 
 /* Hållbarhet */
 .hallbarhet-main{
@@ -262,7 +340,7 @@ footer{
     
     width: 100vw;
     max-width: 100%;
-    height: 10rem;
+    min-height: 10rem;
 
     color: var(--main-text-color-light); 
     background: var(--secondary-color);
@@ -270,4 +348,73 @@ footer{
 
 footer > :first-child{
     width: 6rem;
+}
+
+/* Media */
+@media(max-width: 768px){
+    /* Nav */
+    .topnav{
+        justify-content: space-between;
+        align-items: center;
+        height: 6rem;
+    }
+    
+    .topnav .img-container{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .topnav > *:not(.img-container){
+        display: none;
+        flex-direction: column;
+    }
+
+    .topnav .navlinks-mobile{
+        display: block;
+    }
+
+    .topnav .navlinks-mobile a{
+        display: inline-block;
+        
+        margin-right: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    /* Intro */
+    .introduction{
+        justify-content: center;
+    }
+
+    .introduction .prompt{
+        margin: 0;
+        max-width: 80vw;
+    }
+
+    .introduction .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduction .buttons button{
+        margin-top: 1rem;
+    }
+
+    /* Footer */
+    footer{
+        padding-top: 1rem;
+        flex-direction: column;
+    }
+
+    footer .navlinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .navlinks a{
+        text-align: center;
+        margin-top: 0;
+        padding: 0.7rem;
+        font-size: 1.3rem;
+    }
 }

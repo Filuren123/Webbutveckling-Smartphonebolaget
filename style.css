@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Serif+Pro&display=swap');
+
+/* Fonts
+* font-family: 'Montserrat', sans-serif;
+* font-family: 'Source Serif Pro', serif;
+*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Generell kod */
@@ -12,6 +20,8 @@ html{
 
 :root{
     --primary-color: #96bdc6;
+    --primary-color-rgb: 149, 189, 198;
+
     --secondary-color: #161b33;
     --extra-color: #81968f;
     
@@ -27,6 +37,10 @@ html{
 
 button{
     cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Source Serif Pro', serif;
 }
 
 /* Navbar */
@@ -114,50 +128,112 @@ button{
     background: var(--primary-color);
 }
 
+.introduction .img-credits{
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+/* Phone index */
+.phones-index{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    background: var(--main-text-color-light);
+}
+
+.phones-index .phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 1rem;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: var(--base-border-rad);
+    background: rgba(var(--primary-color-rgb), 0.3);
+}
+
+.phones-index .phone h2{
+    font-size: 1.6rem;
+}
+
+.phones-index .phone p{
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.phones-index .phone .buttons{
+    margin-top: 0.5rem;
+}
+
+
+
 /* Hållbarhet */
 .hallbarhet-main{
     display: flex;
 
-    max-width: 65rem;
+    max-width: 75rem;
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.hallbarhet-main .main-content .tree-n-text{
+    display: flex;
+    align-items: center;
+}
+.hallbarhet-main .tree-n-text > :first-child{
+    flex: 1 1;
+}
+.hallbarhet-main .tree-n-text .img-container{
+    max-width: 20rem;
 }
 
 .hallbarhet-main aside{
     flex: 0 0 20rem;
-    padding-right: 1rem;
 }
 
 .hallbarhet-main aside > *{
     margin: 0.5rem 0;
-    padding: 1rem 0;
-    
-    border-top: 1px dashed black;
+    padding: 1rem;
+
+    transition: background 0.1s linear;
+}
+
+.hallbarhet-main aside > *:hover{
+    background: rgb(216, 216, 216);
 }
 
 .hallbarhet-main .main-content{
     display: flex;
     flex-direction: column;
     flex: 1 1;
-
+    
     padding-left: 1rem;
-    border-left: 1px dashed #000;
 }
 
-.hallbarhet-main .main-content > :first-child{
-    height: 6rem;
-    order: 2;
-}
-
-.hallbarhet-main .main-content > :nth-child(2){
-    flex: 1 1;
-
+.hallbarhet-main .main-content article h1{
+    font-size: 1.6rem;
+    margin-top: 1rem;
 }
 
 .hallbarhet-main .main-content > :first-child{
     display: flex;
     align-items: center;
+
+    margin-top: 2rem;
+
+    height: 6rem;
+    order: 2;
+}
+
+
+.hallbarhet-main .main-content > :nth-child(2){
+    flex: 1 1;
+
 }
 
 .hallbarhet-main .main-content > :first-child > :first-child{
@@ -173,10 +249,6 @@ button{
     border-left: 1px solid black;
 }
 
-.hallbarhet-main .main-content > :nth-child(2) h1{
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
 
 .hallbarhet-main .main-content > :nth-child(2) p{
     margin-bottom: 1rem;

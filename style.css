@@ -332,6 +332,48 @@ button{
     margin-bottom: 1rem;
 }
 
+/* About */
+.header-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-about h1{
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.main-about{
+    max-width: 70rem;
+    margin: auto;
+}
+
+.main-about section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.main-about > *:not(:last-child){
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: solid 2px #dfdfdf;
+}
+
+.main-about > :nth-child(even) > .about{
+    order: -12;
+}
+
+.main-about section .img-container{
+    width: 33rem;
+}
+
+.main-about section .about{
+    flex: 1 1;
+    padding: 1rem 2rem;
+}
+
 /* Footer */
 footer{
     display: flex;

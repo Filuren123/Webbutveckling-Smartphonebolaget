@@ -5,3 +5,7 @@ smartphone-conceptdrawing.jpg : https://ndla.no/subject:7509b507-548d-48e1-bef3-
 tree.png : https://pixabay.com/sv/illustrations/tr%c3%a4d-elevation-landskap-5373563/
 
 smartphone.jpg : https://www.flickr.com/photos/140988606@N08/29213620260
+
+crowd-1.jpg : https://pixabay.com/illustrations/crowd-people-silhouettes-2045498/
+
+person-thing.png : https://www.pngkit.com/view/u2q8w7i1e6e6a9w7_people-icons-png-inquiry-icon/

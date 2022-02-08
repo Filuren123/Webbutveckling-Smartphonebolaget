@@ -374,6 +374,54 @@ button{
     padding: 1rem 2rem;
 }
 
+/* Visit */
+.visit-body{
+    background: rgb(245, 248, 255);
+}
+
+.visit-main{
+    max-width: 60rem;
+    margin: auto;
+}
+
+.visit-main .ads{
+    margin-top: 2rem;
+}
+
+.ads .ad{
+    display: flex;
+    height: 20rem;
+}
+
+.ads .ad .right{
+    flex: 1 1;
+    padding: 2rem;
+    background: white;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.ads .ad > :first-child{
+    width: 24rem;
+    height: inherit;
+}
+
+.ads .ad > :first-child img{
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+}
+
+.ad .right .top{
+    display: flex;
+
+}
+
+.ad .right .top > :first-child{
+    width: 2rem;
+}
+
 /* Footer */
 footer{
     display: flex;

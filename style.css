@@ -404,7 +404,8 @@ button{
 
 .ads .ad{
     display: flex;
-    height: 20rem;
+    height: 22rem;
+    margin-top: 2rem;
 }
 
 .ads .ad .right{
@@ -414,16 +415,17 @@ button{
     
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .ads .ad > :first-child{
-    width: 24rem;
+    max-width: 24rem;
     height: inherit;
 }
 
 .ads .ad > :first-child img{
     object-fit: cover;
-    width: inherit;
+    max-width: inherit;
     height: inherit;
 }
 
@@ -434,6 +436,37 @@ button{
 
 .ad .right .top > :first-child{
     width: 2rem;
+    margin-right: 0.7rem;
+}
+
+.ad .right .top .info > :first-child{
+    font-style: italic;
+}
+
+.ad .right .top .info > :nth-child(2){
+    font-size: 0.8rem;
+}
+
+.ad .right .main{
+    margin-top: 0.5rem;
+}
+
+.ad .right .main p{
+    margin-top: 0.5rem;
+}
+
+.ad .bottom{
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+    border-top: 1px solid rgb(192, 192, 192);
+}
+
+.ad .bottom span{
+    font-size: 0.9rem;
+}
+
+.ad .bottom > :nth-child(2){
+    margin: 0 1rem;
 }
 
 /* Footer */
@@ -501,6 +534,10 @@ footer .disclaims span:not(:first-child){
         padding: 0;
         margin-right: 1.5rem;
     }
+
+    .ads .ad{
+        height: 27rem;
+    }
 }
 
 @media(max-width: 768px){
@@ -559,6 +596,22 @@ footer .disclaims span:not(:first-child){
     
     .main-about section .about.about{
         order: 12;
+    }
+
+    /* Visit */    
+    .ads .ad{
+        margin-bottom: 20rem;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+    }
+    
+    .ads .ad .right{
+        padding: 1rem;
+    }
+    
+    .ad .right .top > :first-child{
+        margin-right: 0;
     }
     
     /* Footer */

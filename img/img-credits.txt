@@ -9,3 +9,9 @@ smartphone.jpg : https://www.flickr.com/photos/140988606@N08/29213620260
 crowd-1.jpg : https://pixabay.com/illustrations/crowd-people-silhouettes-2045498/
 
 person-thing.png : https://www.pngkit.com/view/u2q8w7i1e6e6a9w7_people-icons-png-inquiry-icon/
+
+man-in-nature.jpg : https://pxhere.com/en/photo/1571869
+
+amazon.jpg : https://pixahive.com/photo/nature-view-in-morning-time/
+
+deforest.jpg : https://www.flickr.com/photos/forestservicenw/30808796838

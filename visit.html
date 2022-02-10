@@ -10,14 +10,17 @@
 </head>
 <body class="visit-body">
     <nav class="topnav">
-        <div class="img-container">
-            <a href="index.html"><img src="img/loading-circle.png" alt="Company Logo"></a>
+        <div>
+            <div class="img-container">
+                <a href="index.html"><img src="img/loading-circle.png" alt="Company Logo"></a>
+            </div>
+            <h1 id="nav-title">Universal Smart Block</h1>
         </div>
         <div class="navlinks">
-            <a href="#">Mobiltelefoner</a><a href="hallbarhet.html">Hållbarhet</a><a href="#">Besök oss</a><a href="#">Om oss</a>
+            <a href="#">Mobiltelefoner</a><a href="hallbarhet.html">Hållbarhet</a><a href="visit.html">Besök oss</a><a href="about.html">Om oss</a>
         </div>
         <div class="navlinks navlinks-mobile">
-            <a href="#">Mobiltelefoner</a><a href="#">Mer</a>
+            <a href="#">Mobiltelefoner</a><a href="#footer">Mer</a>
         </div>
     </nav>
 
@@ -154,8 +157,26 @@
         </section>
     </main>
 
-    <footer>
-
+    <footer id="footer">
+        <div>
+            <div class="img-container" onclick="window.location = 'index.html'">
+                <img src="img/loading-circle.png" alt="Logga">
+            </div>
+            <div class="info">
+                <div class="top">
+                    <a href="#">Mobiltelefoner</a><a href="hallbarhet.html">Hållbarhet</a><a href="#">Besök oss</a><a href="#">Om oss</a>
+                </div>
+                <div class="social">
+                    <img src="img/social/facebook.png" alt="Facebook"><img src="img/social/instagram.png" alt="Instagram"><img src="img/social/twitter.png" alt="Twitter">
+                </div>
+                <div class="disclaims">
+                    <span>Universal Smart Block</span>
+                    <span>Terms of Use</span>
+                    <span>Cookies</span>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="js/header-control.js"></script>
 </body>
 </html>

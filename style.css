@@ -255,87 +255,113 @@ button{
 }
 
 /* Hållbarhet */
-.hallbarhet-main{
+.hall-intro{
     display: flex;
-
-    max-width: 75rem;
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-}
-
-.hallbarhet-main .main-content .tree-n-text{
-    display: flex;
+    justify-content: center;
     align-items: center;
-}
-.hallbarhet-main .tree-n-text > :first-child{
-    flex: 1 1;
-}
-.hallbarhet-main .tree-n-text .img-container{
-    max-width: 20rem;
+
+    margin-top: 3rem;
 }
 
-.hallbarhet-main aside{
-    flex: 0 0 20rem;
+.hall-intro > :first-child{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    background-image: url(img/enviorment/man-in-sky.jpg);
+    background-position: left;
+    background-size: 150%;
+    background-position-x: 0;
+    
+    width: 60rem;
+    height: 30rem;
+    border-radius: 2rem;
+    color: #fff;
 }
 
-.hallbarhet-main aside > *{
-    margin: 0.5rem 0;
+.hall-intro h5{
+    font-size: 1.4rem;
+}
+
+.hall-intro .stand-for{
+    font-size: 3rem;
+    font-weight: 700;
+
+    max-width: 25rem;
+}
+
+.hall-intro .button-container{
+    margin-top: 1rem;
+}
+
+.hall-intro .button-container button{
+    border: solid 1px rgba(211, 211, 211, 0.342);
+    background: var(--secondary-color);
     padding: 1rem;
+    border-radius: var(--base-border-rad);
+    color: var(--main-text-color-light);
+    width: 10rem;
+    font-weight: 700;
+    font-size: 1.5rem;
 
     transition: background 0.1s linear;
 }
 
-.hallbarhet-main aside > *:hover{
-    background: rgb(216, 216, 216);
+.hall-intro .button-container button:hover{
+    background: #fdbca7;
 }
 
-.hallbarhet-main .main-content{
+.hall-header{
     display: flex;
-    flex-direction: column;
-    flex: 1 1;
-    
-    padding-left: 1rem;
-}
-
-.hallbarhet-main .main-content article h1{
-    font-size: 1.6rem;
-    margin-top: 1rem;
-}
-
-.hallbarhet-main .main-content > :first-child{
-    display: flex;
+    justify-content: center;
     align-items: center;
 
     margin-top: 2rem;
-
-    height: 6rem;
-    order: 2;
 }
 
-
-.hallbarhet-main .main-content > :nth-child(2){
-    flex: 1 1;
-
-}
-
-.hallbarhet-main .main-content > :first-child > :first-child{
-    max-width: 10rem;
+.hall-header h1{
+    font-size: 3rem;
+    border-bottom: 1px solid rgb(168, 168, 168);
     text-align: center;
+    padding-bottom: 0.5rem;
+
+    flex: 0 1 60rem;
 }
 
-.hallbarhet-main .main-content > :first-child p{
-    flex: 1 1;
-
-    padding-left: 1rem;
-    margin-left: 1rem;
-    border-left: 1px solid black;
+.hall-how{
+    display: flex;
+    justify-content: space-between;
+    
+    max-width: 80rem;
+    margin: auto;
 }
 
+.hall-how > *{
+    background-image: url(img/enviorment/amazon.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 20rem;
+}
 
-.hallbarhet-main .main-content > :nth-child(2) p{
-    margin-bottom: 1rem;
+.hall-how > :nth-child(2){
+    background-image: url(img/enviorment/deforest.jpg);
+}
+
+.hall-how > * > :first-child{
+    height: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.153);
+
+    transition: background 0.1s linear;
+}
+
+.hall-how > * > :first-child:hover{
+    background: rgba(255, 255, 255, 0.8);
 }
 
 /* About */

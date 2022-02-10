@@ -3,5 +3,8 @@ const introElement = document.querySelector('#hall-intro-bg');
 
 window.addEventListener('scroll', () =>{
     let offset = window.pageYOffset; 
-    introElement.style.backgroundPositionX = offset * -0.1 + "px";
+    
+    if(window.screen.width > 768){
+        introElement.style.backgroundPositionX = offset * -0.1 + "px";
+    }
 });

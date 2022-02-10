@@ -8,14 +8,14 @@
 * font-family: 'Source Serif Pro', serif;
 */
 
+
+/* Generell kod */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
-/* Generell kod */
 
 html{
     scroll-behavior: smooth;
@@ -50,6 +50,20 @@ body{
 
 button{
     cursor: pointer;
+}
+
+.img-credits a{
+    color: rgb(255, 255, 255);
+}
+
+/* Scroll-bar */
+::-webkit-scrollbar{
+    width: 10px;
+    background: rgb(204, 204, 204);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(104, 104, 104);
 }
 
 /*! Fundera över header fonten */
@@ -168,6 +182,12 @@ button{
     position: absolute;
     bottom: 0;
     right: 0;
+
+    font-size: 0.8rem;
+}
+
+.introduction .img-credits a{
+    color: #000;
 }
 
 /* Phone index */
@@ -259,7 +279,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     margin-top: 3rem;
 }
 
@@ -267,6 +287,7 @@ button{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
     
     background-image: url(img/enviorment/man-in-sky.jpg);
     background-position: left;
@@ -309,6 +330,15 @@ button{
 
 .hall-intro .button-container button:hover{
     background: #fdbca7;
+}
+
+.hall-intro .img-credits{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+    font-size: 0.8rem;
+    max-width: 15rem;
 }
 
 .hall-header{
@@ -564,6 +594,22 @@ footer .disclaims span:not(:first-child){
     .ads .ad{
         height: 27rem;
     }
+
+    .hall-intro{
+        margin-top: 0;
+    }
+
+    .hall-intro > :first-child{
+        border-radius: 0;  
+    }
+
+    .hall-how{
+        flex-direction: column;
+    }
+
+    .hall-how > * > :first-child{
+        background: rgba(255, 255, 255, 0.8);
+    }
 }
 
 @media(max-width: 768px){
@@ -612,6 +658,13 @@ footer .disclaims span:not(:first-child){
     
     .introduction .buttons button{
         margin-top: 1rem;
+    }
+
+    /* Hållbarhet */
+    .hall-intro > :first-child{
+        background-size: 100%;
+        background-position: center;
+        background-size: cover;
     }
     
     /* About */
@@ -696,5 +749,28 @@ footer .disclaims span:not(:first-child){
 @media(max-width: 500px){
     .topnav > :first-child h1{
         display: none;
+    }
+
+    .hall-intro > :first-child{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hall-intro > :first-child > :first-child{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hall-intro > :first-child > :first-child .stand-for{
+        text-align: center;
+    }
+
+    .hall-intro .diss{
+        display: none;
+    }
+
+    .hall-how > *{
+        height: 27rem;
     }
 }

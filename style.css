@@ -394,6 +394,92 @@ button{
     background: rgba(255, 255, 255, 0.8);
 }
 
+/* Buy */
+.buy-main{
+    display: flex;
+    
+    max-width: 65rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.buy-aside{
+    width: 20rem;
+}
+
+.buy-main > :nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
+
+}
+
+.buy-main .phone{
+    background: #fff;
+    border-radius: var(--base-border-rad);
+    padding: 1rem;
+    max-width:  20rem;
+}
+
+.buy-main .phone h2{
+    font-size: 1.3rem;
+}
+
+.buy-main .phone .colors div{
+    display: inline-block;
+    
+    margin: 0.5rem 0;
+    margin-right: 0.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #000;
+    border-radius: 50%;
+}
+
+.buy-main .phone .colors > :nth-child(1){
+    background: violet;
+}
+
+.buy-main .phone .colors > :nth-child(2){
+    background: yellowgreen;
+}
+
+.buy-main .phone .colors > :nth-child(3){
+    background: rgb(10, 26, 250);
+}
+
+.buy-main .phone .price{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.buy-main .phone .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1rem;
+}
+
+.buy-main .phone .buttons button{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: none;
+    background: var(--secondary-color);
+    color: #fff;
+    border-radius: var(--base-border-rad);
+
+    transition: background 0.1s linear;
+}
+
+.buy-main .phone .buttons button:hover{
+    background: #fdbca7;
+}
+
 /* About */
 .header-about{
     display: flex;

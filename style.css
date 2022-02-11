@@ -128,8 +128,6 @@ button{
 /* Introduktion */
 .introduction{
     background-image: url(img/smartphone-conceptdrawing.jpg);
-    background-position: center;
-    background-attachment: fixed;
 
     display: flex;
     align-items: center;
@@ -405,13 +403,38 @@ button{
 
 .buy-aside{
     width: 20rem;
+    background: #fff;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: var(--base-border-rad);
+}
+
+.buy-aside article{
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #000;
+}
+
+.buy-aside article > *{
+    margin-bottom: 0.5rem;
+}
+
+.buy-aside article > * > input{
+    margin-right: 0.7rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+.buy-aside article > * > label{
+    font-size: 1.2rem;
 }
 
 .buy-main > :nth-child(2){
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     flex: 1 1;
-
 }
 
 .buy-main .phone{
@@ -419,6 +442,7 @@ button{
     border-radius: var(--base-border-rad);
     padding: 1rem;
     max-width:  20rem;
+    margin: 1rem;
 }
 
 .buy-main .phone h2{
@@ -434,6 +458,7 @@ button{
     height: 1.2rem;
     background: #000;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .buy-main .phone .colors > :nth-child(1){
@@ -472,6 +497,7 @@ button{
     background: var(--secondary-color);
     color: #fff;
     border-radius: var(--base-border-rad);
+    font-size: 1.3rem;
 
     transition: background 0.1s linear;
 }
@@ -730,6 +756,7 @@ footer .disclaims span:not(:first-child){
     /* Intro */
     .introduction{
         justify-content: center;
+        background-position: center;
     }
     
     .introduction .prompt{
@@ -777,6 +804,11 @@ footer .disclaims span:not(:first-child){
     
     .ad .right .top > :first-child{
         margin-right: 0;
+    }
+
+    /* Buy */
+    .buy-aside{
+        display: none;
     }
     
     /* Footer */

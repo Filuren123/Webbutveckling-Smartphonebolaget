@@ -15,3 +15,5 @@ man-in-nature.jpg : https://pxhere.com/en/photo/1571869
 amazon.jpg : https://pixahive.com/photo/nature-view-in-morning-time/
 
 deforest.jpg : https://www.flickr.com/photos/forestservicenw/30808796838
+
+robotfactory : https://www.flickr.com/photos/smjb/9222637454

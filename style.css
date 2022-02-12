@@ -199,10 +199,10 @@ button{
 }
 
 .phones-index-header h1{
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     
     border-radius: 0.5rem;    
-    background: rgb(222, 227, 233);
+    background: rgb(236, 236, 236);
     padding: 0.5rem;
 }
 
@@ -298,16 +298,17 @@ button{
     width: 60rem;
     height: 30rem;
     border-radius: 2rem;
-    color: #fff;
 }
 
 .hall-intro h5{
     font-size: 1.4rem;
+    color: #fff;
 }
 
 .hall-intro .stand-for{
     font-size: 3rem;
     font-weight: 700;
+    color: #fff;
 
     max-width: 25rem;
 }
@@ -338,6 +339,7 @@ button{
     top: 1rem;
     left: 1rem;
 
+    color: #fff;
     font-size: 0.8rem;
     max-width: 15rem;
 }
@@ -582,13 +584,13 @@ button{
     display: flex;
     height: 22rem;
     margin-top: 2rem;
-    border-radius: var(--base-border-rad);
 }
 
 .ads .ad .right{
     flex: 1 1;
     padding: 2rem;
     background: white;
+    border-radius: 0 var(--base-border-rad) var(--base-border-rad) 0;
     
     display: flex;
     flex-direction: column;
@@ -604,6 +606,8 @@ button{
     object-fit: cover;
     max-width: inherit;
     height: inherit;
+
+    border-radius: var(--base-border-rad) 0 0 var(--base-border-rad);
 }
 
 .ad .right .top{
@@ -731,6 +735,16 @@ footer .disclaims span:not(:first-child){
     .hall-how > * > :first-child{
         background: rgba(255, 255, 255, 0.8);
     }
+
+    /* About */
+    .main-about section{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .main-about section .about.about{
+        order: 12;
+    }
 }
 
 @media(max-width: 768px){
@@ -788,16 +802,6 @@ footer .disclaims span:not(:first-child){
         background-size: 100%;
         background-position: center;
         background-size: cover;
-    }
-    
-    /* About */
-    .main-about section{
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .main-about section .about.about{
-        order: 12;
     }
 
     /* Visit */    
@@ -888,6 +892,11 @@ footer .disclaims span:not(:first-child){
     .hall-intro > :first-child{
         justify-content: center;
         align-items: center;
+    }
+
+    .main-about section .about{
+        flex: 1 1;
+        padding: 1rem 0.5rem;
     }
 
     .hall-intro > :first-child > :first-child{

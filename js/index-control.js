@@ -6,3 +6,9 @@ window.addEventListener('scroll', () =>{
         intro.style.backgroundPositionY = "calc(60% + " + offset * 0.7 + "px)";
     }
 });
+
+// Button redirect
+const buyPhone = document.querySelector('#intro-buy-phone');
+buyPhone.addEventListener('click', () =>{
+    window.location = "buy.html";
+})

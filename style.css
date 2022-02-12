@@ -567,10 +567,6 @@ button{
 }
 
 /* Visit */
-.visit-body{
-    background: rgb(245, 248, 255);
-}
-
 .visit-main{
     max-width: 60rem;
     margin: auto;
